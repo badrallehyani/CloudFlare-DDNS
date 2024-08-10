@@ -9,7 +9,7 @@ auth = os.getenv("auth")
 me = Cloudflare(auth)
 
 # Get Zones
-domainName = 'badr.dev'
+domainName = 'badr.dev' # replace with urs
 zone = me.getZones(domainName).json()['result'][0]
 
 # Get DNS Records
